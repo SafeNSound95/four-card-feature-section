@@ -26,7 +26,7 @@ I loved this one, I'm getting the hang of doing mobile first, and I'm doing a lo
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub?share=true)
+- Solution URL: (https://www.frontendmentor.io/solutions/four-card-feature-section-grid-flexbox-5TcsTaREqy)
 - Live Site URL: (https://four-card-feature-section-saif.netlify.app/)
 
 ## My process
