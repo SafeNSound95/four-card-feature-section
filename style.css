@@ -1,0 +1,162 @@
+/* DESIGN DECISIONS */
+
+/* 
+
+  Colors: 
+
+   ### Primary
+      - Red: hsl(0, 78%, 62%)
+      - Cyan: hsl(180, 62%, 55%)
+      - Orange: hsl(34, 97%, 64%)
+      - Blue: hsl(212, 86%, 64%)
+
+    ### Neutral
+      - Very Dark Blue: hsl(234, 12%, 34%)
+      - Grayish Blue: hsl(229, 6%, 66%)
+      - Very Light Gray: hsl(0, 0%, 98%)
+
+
+
+  Fonts:
+
+      - Family: [Poppins](https://fonts.google.com/specimen/Poppins) 
+        Weights: 200, 400, 600
+               
+*/
+
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+/* SPECIFIC STYLES */
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 80px 30px 50px 30px;
+}
+
+.main-heading {
+  font-size: 2.4rem;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.text-container h2:first-child {
+  font-weight: 200;
+}
+
+.text-container h2:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.text-container p {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  margin-bottom: 75px;
+  max-width: 370px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 7px 16px hsla(229, 6%, 66%, 0.5);
+  margin-bottom: 25px;
+  background-color: #fff;
+  max-width: 325px;
+}
+
+.feature-card:nth-child(1) {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.feature-card:nth-child(2) {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.feature-card:nth-child(3) {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.feature-card:nth-child(4) {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: hsl(234, 12%, 34%);
+}
+
+.feature-card p {
+  font-size: 13px;
+  color: hsl(229, 6%, 66%);
+}
+
+.feature-card img {
+  align-self: flex-end;
+  margin-top: 35px;
+  width: 54px;
+}
+
+/* 752px*/
+@media screen and (min-width: 47em) {
+  html {
+    font-size: 68.75%;
+  }
+
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .text-container p {
+    max-width: 100%;
+  }
+}
+
+/*1088*/
+@media screen and (min-width: 68em) {
+  html {
+    font-size: 75%;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .feature-card:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+
+  .feature-card:nth-child(1),
+  .feature-card:nth-child(4) {
+    transform: translateY(50%);
+  }
+
+  .feature-card h3 {
+    margin-bottom: 5px;
+  }
+}
