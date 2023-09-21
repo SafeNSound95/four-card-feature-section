@@ -26,8 +26,8 @@ I loved this one, I'm getting the hang of doing mobile first, and I'm doing a lo
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub?share=true)
+- Live Site URL: (https://four-card-feature-section-saif.netlify.app/)
 
 ## My process
 
