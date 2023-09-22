@@ -41,14 +41,16 @@ body {
   font-size: 16px;
   background-color: hsl(0, 0%, 98%);
   min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 /* SPECIFIC STYLES */
 
 .container {
+  padding: 80px 30px 50px 30px;
   display: grid;
   place-items: center;
-  padding: 80px 30px 50px 30px;
 }
 
 .main-heading {
