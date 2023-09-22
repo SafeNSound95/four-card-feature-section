@@ -40,6 +40,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: hsl(0, 0%, 98%);
+  min-height: 100vh;
 }
 
 /* SPECIFIC STYLES */
@@ -47,7 +48,6 @@ body {
 .container {
   display: grid;
   place-items: center;
-  min-height: 100vh;
   padding: 80px 30px 50px 30px;
 }
 
@@ -61,11 +61,12 @@ body {
   max-width: 500px;
 }
 
-.text-container h2:first-child {
+.text-container h2 {
   font-weight: 200;
 }
 
-.text-container h2:nth-child(2) {
+.text-container span {
+  display: block;
   margin-bottom: 12px;
 }
 
